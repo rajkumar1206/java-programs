@@ -8,7 +8,7 @@ interface Tyre {
 }
 
 interface Door {
-    public int noOfDoor = 4;
+    public final int noOfDoor = 4;
     public void open();
 }
 
@@ -45,7 +45,7 @@ class Benz extends Car implements Tyre, Door {
     @Override
     public void open() {
         System.out.println("Door Opened");
-        System.out.println(this.noOfDoor);
+        System.out.println("Number of Doors are " + this.noOfDoor);
     }
 }
 

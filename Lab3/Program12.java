@@ -23,7 +23,7 @@ public class Program12 {
         System.out.println("Illustrating throw and throws in java");
         Program12 pg = new Program12();
 
-        // Illustration of Divide by Zero
+        // Illustration of Divide by Zero (Throw)
         try{
             int res = pg.divide(1, 0);
             System.out.println(res);
@@ -31,14 +31,14 @@ public class Program12 {
             System.out.println(e.getMessage());
         }
 
-        // Illustrating InterruptedException
+        // Illustrating InterruptedException (Throws)
         try {
             pg.greet();
         } catch (InterruptedException e) {
             System.out.println(e.getMessage());
         }
 
-        // Reading invalid file
+        // Reading invalid file (Throws)
         try {
             pg.read();
         } catch (FileNotFoundException e) {
